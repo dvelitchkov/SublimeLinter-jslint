@@ -17,7 +17,7 @@ class Jslint(Linter):
 
     """Provides an interface to jslint."""
 
-    syntax = ('javascript', 'html')
+    syntax = ('javascript', 'html', 'javascriptnext')
     cmd = 'jslint --terse'
     config_file = ('--config', '.jslintrc', '~')
     regex = r'^.+?:(?P<line>\d+):(?P<col>\d+): (?P<message>.+)$'
